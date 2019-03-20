@@ -510,7 +510,7 @@ contract GameWave is ERC20, ERC20Detailed, Ownable {
 
 /*
 * @title Bank
-* @dev Bank contract which contained all ETH from Dragons and Hamsters teams.
+* @dev Bank contract which contained all ETH from Bears and Bulls teams.
 * When time in blockchain will be grater then current deadline or last deadline need call getWinner function
 * then participants able get prizes.
 *
