@@ -510,7 +510,7 @@ contract GameWave is ERC20, ERC20Detailed, Ownable {
 
 /*
 * @title Bank
-* @dev Bank contract which contained all ETH from Bears and Bulls teams.
+* @dev Bank contract which contained all ETH from Bulls and Bears teams.
 * When time in blockchain will be grater then current deadline or last deadline need call getWinner function
 * then participants able get prizes.
 *
@@ -994,7 +994,7 @@ contract CryptoTeam {
 
         BankContract.setInfo(msg.sender, msg.value.mul(90).div(100));
 
-        owner.transfer(msg.value.mul(10).div(100));
+        address(GameWaveContract).transfer(msg.value.mul(10).div(100));
 
         address(BankContract).transfer(msg.value.mul(90).div(100));
     }

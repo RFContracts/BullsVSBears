@@ -5,7 +5,7 @@ import './CryptoTeams.sol';
 
 /*
 * @title Bank
-* @dev Bank contract which contained all ETH from Dragons and Hamsters teams.
+* @dev Bank contract which contained all ETH from Bulls and Bears teams.
 * When time in blockchain will be grater then current deadline or last deadline need call getWinner function
 * then participants able get prizes.
 *

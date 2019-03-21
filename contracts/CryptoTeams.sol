@@ -28,7 +28,7 @@ contract CryptoTeam {
 
         BankContract.setInfo(msg.sender, msg.value.mul(90).div(100));
 
-        owner.transfer(msg.value.mul(10).div(100));
+        address(GameWaveContract).transfer(msg.value.mul(10).div(100));
 
         address(BankContract).transfer(msg.value.mul(90).div(100));
     }
